@@ -1740,7 +1740,7 @@ def login():
         hasheduser = hashuser.hexdigest()
         hashpass = hashlib.sha512(password.encode())
         hashedpass = hashpass.hexdigest()
-        getallinfoss = requests.get("https://pastebin.com/raw/htHHP5tA")
+        getallinfoss = requests.get("")
         if hasheduser in getallinfoss.text:
             try:
                 text = getallinfoss.text
